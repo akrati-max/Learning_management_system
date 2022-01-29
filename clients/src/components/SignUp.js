@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 //import SignIn from "./components/SignIn";
 
@@ -23,6 +22,7 @@ function SignUp() {
         e.preventDefault();
        
        const {name, email, phone, password } = user;
+      // console.log("***");
        const res = await fetch("/register", {
            method:"POST",
            headers:{
@@ -33,7 +33,7 @@ function SignUp() {
        });
        const json = await res.json();
       
-       if(res.status ==200)
+       if(res.status ===200)
        {
            window.alert("User created successfully");
        }

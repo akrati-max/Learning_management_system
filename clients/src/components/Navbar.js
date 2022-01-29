@@ -35,7 +35,7 @@ function Navbar(){
         <Link  className="nav-link" to='/learn'>Learn</Link>
         </li>
        {login ? (
-        <li class="nav-item" onClick={handleLogout}>
+        <li class="nav-item" onClick={ handleLogout }>
         <div  className="nav-link">Logout</div>
         </li>
        ):(
