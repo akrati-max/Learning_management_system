@@ -6,7 +6,7 @@ import { LoginProvider } from "./context/LoginContext";
 function App() {
   return (
     <LoginProvider>
-    <div className="App">
+    <div className="App h-screen w-screen">
        <Navbar />
        <Outlet />
     </div>
