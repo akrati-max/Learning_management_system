@@ -5,10 +5,10 @@ const User = require('../Models/userModel')
 const authenticate =require ('../middleware/authenticate')
 
 
-router.get('/', (req, res) => {
-  console.log("Hello, I am /");
-  res.send("I am at auth.js");
-})
+// router.get('/', (req, res) => {
+//   console.log("Hello, I am /");
+//   res.send("I am at auth.js");
+// })
 
 router.post('/register',async (req, res) => {
       const {name, email,phone,password} = req.body;
