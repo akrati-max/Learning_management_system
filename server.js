@@ -15,7 +15,7 @@ app.use(auth);
 app.use(express.static("clients/build"));
 const path = require("path");
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "clients", "build", "index.html"));
 });
 //}
 
